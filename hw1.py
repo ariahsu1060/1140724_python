@@ -6,12 +6,14 @@ def fun(b):
             a.append(b[i])
         else:
             a.append(b[i] + 1)
+    
     #input will change
     b.clear()
     for i in a:
-        c.append(i) 
+        b.append(i) 
     return a
-c = [11, 35, 62, 93]
-d = fun(c)
-print(d)
-print(c)
+if __name__ =="__main__":
+    c = [11, 35, 62, 93]
+    d = fun(c)
+    print(d)
+    print(c)
